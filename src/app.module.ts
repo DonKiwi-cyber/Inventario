@@ -10,9 +10,10 @@ import { DetalleOrdenCompraModule } from './resource/detalle_orden_compra/detall
 import { InventarioModule } from './resource/inventario/inventario.module';
 import { VentaModule } from './resource/venta/venta.module';
 import { DetalleVentaModule } from './resource/detalle_venta/detalle_venta.module';
+import { OrdenCompraModule } from './resource/orden_compra/orden_compra.module';
 
 @Module({
-  imports: [AuthModule, ClientModule, CuentasModule, ProductosModule, DetalleOrdenCompraModule, InventarioModule, VentaModule, DetalleVentaModule],
+  imports: [AuthModule, ClientModule, CuentasModule, ProductosModule, DetalleOrdenCompraModule, InventarioModule, VentaModule, DetalleVentaModule, OrdenCompraModule],
   controllers: [AppController],
   providers: [AppService],
 })
