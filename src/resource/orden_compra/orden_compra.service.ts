@@ -43,7 +43,6 @@ export class OrdenCompraService {
     for (const orden of orden_compra.ordenes_compra) {
       await this.create(orden, user);
     }
-
     return { status: 201, mensaje: 'Orden de compra creada con éxito' };
   }
 

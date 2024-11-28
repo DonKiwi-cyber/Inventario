@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsString, IsOptional } from 'class-validator';
 import { Mensajes_Generales } from 'src/common/helpers/general.helpers';
 import { ApiProperty } from '@nestjs/swagger';
 
@@ -11,7 +11,7 @@ export class CreateDetalleOrdenCompraDto {
 
     @ApiProperty({ description: 'Precio de compra del producto', example: 10.5, uniqueItems: false, nullable: false, type: 'number' })
     @IsNumber({}, { message: Mensajes_Generales.CAMPO_NUMBER })
-    @IsNotEmpty({ message: Mensajes_Generales.CAMPO_VACIO })
+    @IsOptional()
     detalleOC_MontoTotal: number;
 
     @ApiProperty({ description: 'Proveedor del producto', example: 1, uniqueItems: false, nullable: false, type: 'number' })
