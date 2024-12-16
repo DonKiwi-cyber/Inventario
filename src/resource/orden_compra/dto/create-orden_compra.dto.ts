@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsOptional, IsString, MaxLength } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsOptional, IsString, MaxLength } from 'class-validator';
 import { Mensajes_Generales } from 'src/common/helpers/general.helpers';
 import { ApiProperty } from '@nestjs/swagger';
 import { CreateDetalleOrdenCompraDto } from 'src/resource/detalle_orden_compra/dto/create-detalle_orden_compra.dto';

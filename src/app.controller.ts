@@ -9,4 +9,15 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('categorias-productos')
+  async obtenerCategoriaProductos(){
+    return this.appService.obtenerCategoriaProductos();
+  }
+
+  @Get('tipos-transaccion')
+  async obtenerTipoTransaccion(){
+    return this.appService.obtenerTipoTransaccion();
+  }
+
 }

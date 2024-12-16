@@ -1,6 +1,6 @@
 import { PartialType } from '@nestjs/mapped-types';
 import { CreateDetalleOrdenCompraDto } from './create-detalle_orden_compra.dto';
-import { IsNotEmpty, IsNumber } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsString, MaxLength } from 'class-validator';
 import { Mensajes_Generales } from 'src/common/helpers/general.helpers';
 import { ApiProperty } from '@nestjs/swagger';
 

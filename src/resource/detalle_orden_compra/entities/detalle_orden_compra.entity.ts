@@ -1,7 +1,7 @@
 import { Cuenta } from 'src/resource/cuentas/entities/cuenta.entity';
 import { Producto } from 'src/resource/productos/entities/producto.entity';
 import { Proveedore } from 'src/resource/proveedores/entities/proveedore.entity';
-import { Column, Entity, JoinColumn, JoinTable, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinColumn, JoinTable, ManyToMany, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
 
 // Define la entidad de la tabla detalleOC, almacenando la tabla detalleOC en la base de datos
 @Entity('detalleOC') 
