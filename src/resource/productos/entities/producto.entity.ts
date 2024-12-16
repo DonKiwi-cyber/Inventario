@@ -2,7 +2,7 @@ import { enumProductoStatus } from 'src/common/enums/inventario_status.enum';
 import { enumTipoProducto } from 'src/common/enums/tipos_productos.enum';
 import { DetalleOrdenCompra, ProductoOrdenCompra } from 'src/resource/detalle_orden_compra/entities/detalle_orden_compra.entity';
 import { Proveedore } from 'src/resource/proveedores/entities/proveedore.entity';
-import { Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinColumn, JoinTable, ManyToMany, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('producto')
 export class Producto {

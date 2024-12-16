@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsNumber, IsString, IsOptional } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsOptional, IsString, MaxLength } from 'class-validator';
 import { Mensajes_Generales } from 'src/common/helpers/general.helpers';
 import { ApiProperty } from '@nestjs/swagger';
 

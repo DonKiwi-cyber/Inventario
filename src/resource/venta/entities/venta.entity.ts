@@ -1,5 +1,5 @@
 import { DetalleVenta } from 'src/resource/detalle_venta/entities/detalle_venta.entity';
-import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinColumn, OneToMany, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { EstadoVenta } from 'src/common/enums/estado_Venta.enum';
 // Define la entidad de la tabla venta, almacenando la tabla venta en la base de datos
 @Entity('venta')

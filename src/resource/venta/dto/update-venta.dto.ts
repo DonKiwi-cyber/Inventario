@@ -1,7 +1,7 @@
 import { PartialType } from '@nestjs/mapped-types';
 import { CreateVentaDto } from './create-venta.dto';
 
-import { IsString, MaxLength } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsString, MaxLength } from 'class-validator';
 import { Mensajes_Generales } from 'src/common/helpers/general.helpers';
 import { ApiProperty } from '@nestjs/swagger';
 import { EstadoVenta } from 'src/common/enums/estado_Venta.enum';
